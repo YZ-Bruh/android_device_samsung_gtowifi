@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from gtowifi device
 $(call inherit-product, device/samsung/gtowifi/device.mk)
 
 PRODUCT_DEVICE := gtowifi
-PRODUCT_NAME := omni_gtowifi
+PRODUCT_NAME := twrp_gtowifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T290
 PRODUCT_MANUFACTURER := samsung
